@@ -12,22 +12,25 @@ Tested with latest stable version.
 
 ```
 $ php bin/markbench benchmark --profile=github-sample
-Runtime: PHP5.5.21
-Host:    Linux testing-worker-linux-da6418d7-1-8430-linux-17-51028173 2.6.32-042stab090.5 #1 SMP Sat Jun 21 00:15:09 MSK 2014 x86_64
+Runtime: PHP7.0.8
+Host:    Linux cebe-desktop 3.16.0-5-amd64 #1 SMP Debian 3.16.51-3+deb8u1 (2018-01-08) x86_64
 Profile: Sample content from Github (http://github.github.com/github-flavored-markdown/sample_content.html) / 1000 times
 Class:   Markbench\Profile\GithubSampleProfile
-+----------------------+---------+------------+---------------+----------+--------------+
-| package              | version | dialect    | duration (MS) | MEM (B)  | PEAK MEM (B) |
-+----------------------+---------+------------+---------------+----------+--------------+
-| erusev/parsedown     | 1.5.1   |            | 6010          | 11010048 | 11010048     |
-| cebe/markdown        | 1.0.1   |            | 7695          | 11010048 | 11010048     |
-| cebe/markdown        | 1.0.1   | gfm        | 12925         | 11272192 | 11534336     |
-| michelf/php-markdown | 1.4.1   |            | 13952         | 11272192 | 11272192     |
-| michelf/php-markdown | 1.4.1   | extra      | 19476         | 11010048 | 11272192     |
-| kzykhys/ciconia      | v1.0.2  |            | 33115         | 11796480 | 11796480     |
-| kzykhys/ciconia      | v1.0.2  | gfm        | 40104         | 12320768 | 12582912     |
-| league/commonmark    | 0.7.0   | commonmark | 76467         | 14942208 | 14942208     |
-+----------------------+---------+------------+---------------+----------+--------------+```
+
++------------------------+---------+------------+---------------+----------+--------------+
+| package                | version | dialect    | duration (MS) | MEM (B)  | PEAK MEM (B) |
++------------------------+---------+------------+---------------+----------+--------------+
+| erusev/parsedown       | 1.7.1   |            | 1293          | 14680064 | 14680064     |
+| cebe/markdown          | 1.2.1   |            | 1412          | 14680064 | 14680064     |
+| cebe/markdown          | 1.2.1   | extra      | 1626          | 14680064 | 14680064     |
+| cebe/markdown          | 1.2.1   | gfm        | 1873          | 14680064 | 14680064     |
+| michelf/php-markdown   | 1.8.0   |            | 2179          | 14680064 | 14680064     |
+| erusev/parsedown-extra | 0.7.1   | extra      | 2328          | 14680064 | 14680064     |
+| michelf/php-markdown   | 1.8.0   | extra      | 3098          | 14680064 | 14680064     |
+| kzykhys/ciconia        | v1.0.2  |            | 3239          | 14680064 | 14680064     |
+| kzykhys/ciconia        | v1.0.2  | gfm        | 3973          | 14680064 | 14680064     |
+| league/commonmark      | 0.17.5  | commonmark | 6953          | 14680064 | 14680064     |
++------------------------+---------+------------+---------------+----------+--------------+
 
 Tested parsers
 --------------
@@ -35,6 +38,7 @@ Tested parsers
 * [michelf/php-markdown](https://github.com/michelf/php-markdown) [![Latest Stable Version](https://poser.pugx.org/michelf/php-markdown/v/stable.png)](https://packagist.org/packages/michelf/php-markdown)
 * [kzykhys/ciconia](https://github.com/kzykhys/Ciconia) [![Latest Stable Version](https://poser.pugx.org/kzykhys/ciconia/v/stable.png)](https://packagist.org/packages/kzykhys/ciconia)
 * [erusev/parsedown](https://github.com/erusev/parsedown) [![Latest Stable Version](https://poser.pugx.org/erusev/parsedown/v/stable.png)](https://packagist.org/packages/erusev/parsedown)
+* [erusev/parsedown-extra](https://github.com/erusev/parsedown-extra) [![Latest Stable Version](https://poser.pugx.org/erusev/parsedown-extra/v/stable.png)](https://packagist.org/packages/erusev/parsedown-extra)
 * [cebe/markdown](https://github.com/cebe/markdown) [![Latest Stable Version](https://poser.pugx.org/cebe/markdown/v/stable.png)](https://packagist.org/packages/cebe/markdown)
 * [league/commonmark](https://github.com/thephpleague/commonmark) [![Latest Stable Version](https://poser.pugx.org/league/commonmark/v/stable.png)](https://packagist.org/packages/league/commonmark)
 
