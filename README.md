@@ -31,6 +31,7 @@ Class:   Markbench\Profile\GithubSampleProfile
 | kzykhys/ciconia        | v1.0.2  | gfm        | 3973          | 14680064 | 14680064     |
 | league/commonmark      | 0.17.5  | commonmark | 6953          | 14680064 | 14680064     |
 +------------------------+---------+------------+---------------+----------+--------------+
+```
 
 Tested parsers
 --------------
