@@ -44,7 +44,7 @@ class ParsedownDriver implements DriverInterface
      */
     public function getDialect()
     {
-        return null;
+        return 'gfm';
     }
 
     /**
