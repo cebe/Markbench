@@ -12,25 +12,25 @@ Tested with latest stable version.
 
 ```
 $ php bin/markbench benchmark --profile=github-sample
-Runtime: PHP7.0.8
-Host:    Linux cebe-desktop 3.16.0-5-amd64 #1 SMP Debian 3.16.51-3+deb8u1 (2018-01-08) x86_64
+Runtime: PHP7.3.2-3+ubuntu18.04.1+deb.sury.org+1
+Host:    Linux i7559 4.15.0-46-generic #49-Ubuntu SMP Wed Feb 6 09:33:07 UTC 2019 x86_64
 Profile: Sample content from Github (http://github.github.com/github-flavored-markdown/sample_content.html) / 1000 times
 Class:   Markbench\Profile\GithubSampleProfile
 
-+------------------------+---------+------------+---------------+----------+--------------+
-| package                | version | dialect    | duration (MS) | MEM (B)  | PEAK MEM (B) |
-+------------------------+---------+------------+---------------+----------+--------------+
-| erusev/parsedown       | 1.7.1   |            | 1293          | 14680064 | 14680064     |
-| cebe/markdown          | 1.2.1   |            | 1412          | 14680064 | 14680064     |
-| cebe/markdown          | 1.2.1   | extra      | 1626          | 14680064 | 14680064     |
-| cebe/markdown          | 1.2.1   | gfm        | 1873          | 14680064 | 14680064     |
-| michelf/php-markdown   | 1.8.0   |            | 2179          | 14680064 | 14680064     |
-| erusev/parsedown-extra | 0.7.1   | extra      | 2328          | 14680064 | 14680064     |
-| michelf/php-markdown   | 1.8.0   | extra      | 3098          | 14680064 | 14680064     |
-| kzykhys/ciconia        | v1.0.2  |            | 3239          | 14680064 | 14680064     |
-| kzykhys/ciconia        | v1.0.2  | gfm        | 3973          | 14680064 | 14680064     |
-| league/commonmark      | 0.17.5  | commonmark | 6953          | 14680064 | 14680064     |
-+------------------------+---------+------------+---------------+----------+--------------+
++------------------------+---------+-------------+---------------+----------+--------------+
+| package                | version | dialect     | duration (MS) | MEM (B)  | PEAK MEM (B) |
++------------------------+---------+-------------+---------------+----------+--------------+
+| erusev/parsedown       | 1.7.1   | gfm         | 1067          | 12582912 | 12582912     |
+| cebe/markdown          | 1.2.1   |             | 1353          | 12582912 | 12582912     |
+| cebe/markdown          | 1.2.1   | extra       | 1445          | 12582912 | 12582912     |
+| cebe/markdown          | 1.2.1   | gfm         | 1573          | 12582912 | 12582912     |
+| erusev/parsedown-extra | 0.7.1   | gfm & extra | 1946          | 12582912 | 12582912     |
+| michelf/php-markdown   | 1.8.0   |             | 2199          | 12582912 | 12582912     |
+| michelf/php-markdown   | 1.8.0   | extra       | 2463          | 12582912 | 12582912     |
+| kzykhys/ciconia        | v1.0.2  |             | 2468          | 14680064 | 14680064     |
+| kzykhys/ciconia        | v1.0.2  | gfm         | 2959          | 14680064 | 14680064     |
+| league/commonmark      | 0.18.1  | commonmark  | 4639          | 14680064 | 14680064     |
++------------------------+---------+-------------+---------------+----------+--------------+
 ```
 
 Tested parsers
